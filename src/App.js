@@ -1,11 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+function Game() {
   return (
-  <div>Escape Room</div>
-
+    <section className="game">
+      <Room />
+    </section>
   );
 }
 
-export default App;
+const Room = () => {
+  return (
+    <article>
+      <Wall></Wall>
+    </article>
+  );
+};
+
+const Wall = () => <img src="Plain-White-Walls.jpg" alt="" />;
+
+export default Game;
