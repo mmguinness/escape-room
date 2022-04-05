@@ -1,4 +1,9 @@
+import {React} from 'react'
+import {useState} from 'react'
 export const FirstKey = () => {
-  return <button> Click here</button>
+  const [disable, setDisable] = useState(false);
+  return <button disabled={disable} onClick={() => setDisable(true)}> Get key</button>
 };
+
+
 

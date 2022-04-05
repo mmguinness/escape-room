@@ -1,12 +1,16 @@
+
 import './App.css';
 import {FirstKey} from "./components/FirstKey";
 function App() {
   return (
   <div>Escape Room
-     <FirstKey/>
 
+    <FirstKey/>
+     
+    </div>
+  
 
-  </div>
+ 
   
   );
 }
