@@ -1,4 +1,5 @@
 import "./App.css";
+import { Room } from "./components/Room";
 
 function Game() {
   return (
@@ -7,15 +8,5 @@ function Game() {
     </section>
   );
 }
-
-const Room = () => {
-  return (
-    <article>
-      <Wall></Wall>
-    </article>
-  );
-};
-
-const Wall = () => <img src="Plain-White-Walls.jpg" alt="" />;
 
 export default Game;
