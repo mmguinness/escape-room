@@ -1,14 +1,10 @@
-import './App.css';
-import {FirstKey} from "./components/FirstKey";
-function App() {
+
+import "./App.css";
+import { Room } from "./components/Room";
+
+function Game() {
   return (
-  <div>Escape Room
-     <FirstKey/>
-
-
-  </div>
-  
-  );
-}
-
-export default App;
+    <section className="game">
+      
+      <Room />
+    </section>
