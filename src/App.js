@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {FirstKey} from "./components/FirstKey";
 function App() {
   return (
-  <div>Escape Room</div>
+  <div>Escape Room
+     <FirstKey/>
 
+
+  </div>
+  
   );
 }
 
