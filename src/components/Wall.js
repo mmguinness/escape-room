@@ -1,9 +1,11 @@
 import "./wall.css";
+import { Door } from "./Door";
 
 export const Wall = () => {
   return (
-    <article className="wall">
-      <img src="Plain-White-Walls.jpg" alt="" />
+    <article>
+      <Door></Door>
+      <img className="wall" src="Plain-White-Walls.jpg" alt="" />
     </article>
   );
 };

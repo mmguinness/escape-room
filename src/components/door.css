@@ -1,0 +1,9 @@
+.door {
+  display: block;
+  height: auto;
+  width: 100px;
+  z-index: 1;
+  top: 80px;
+  left: 580px;
+  position: absolute;
+}

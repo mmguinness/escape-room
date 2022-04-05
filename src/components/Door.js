@@ -1,3 +1,5 @@
+import "./door.css";
+
 export const Door = () => {
-  <img src="" alt="" />
-}
+  return <img className="door" src="door.png" alt="" />;
+};
