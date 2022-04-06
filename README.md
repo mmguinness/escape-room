@@ -16,3 +16,6 @@ solve puzzles to complete the mystery, within a limited timeframe.
 
 # MVP
 * Click on clue and acquire key to escape room.
+ ![Diagram](readme_images/click_key.png)
+
+ ![Diagram](readme_images/click_door.png)
