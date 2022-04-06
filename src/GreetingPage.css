@@ -1,0 +1,11 @@
+.greetings {
+ background-image: url('../public/Plain-White-Walls.jpg');
+ width: 1024px;
+ height: 683px;
+}
+
+.game-explination {
+ color: rgb(71, 28, 29);
+  width: 300px;
+  overflow: auto;
+}
