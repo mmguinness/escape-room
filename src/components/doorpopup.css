@@ -18,6 +18,7 @@
   bottom: 40px;
   padding: 20px;
   overflow: auto;
+  z-index: 2;
 }
 
 .btn-close {
@@ -27,4 +28,5 @@
   position: absolute;
   right: 527px;
   top: 80px;
+  z-index: 2;
 }

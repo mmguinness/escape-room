@@ -5,7 +5,7 @@ const DoorPopup = props => {
   return (
     <div className="doorpopup-box">
       <div className="box">
-        <button className="btn-close" onClick={props.handClose}>
+        <button className="btn-close" onClick={props.handleClose}>
           x
         </button>
         {props.content}
