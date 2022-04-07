@@ -4,8 +4,17 @@
  height: 683px;
 }
 
+.welcome {
+  position: relative;
+  color:saddlebrown;
+ 
+}
 .game-explination {
- color: rgb(71, 28, 29);
-  width: 300px;
+ color: saddlebrown;
   overflow: auto;
+  padding: 90px;
+}
+
+.play-game {
+  position: absolute;
 }
