@@ -5,12 +5,15 @@ import "./App.css";
 
 function App() {
 
-  const [isVisible, setIsVisible] = useState(true);
-  const toggleKey = () => {
-    setIsVisible(!isVisible);
+  const [inventory, setInventory] = useState({ key: false, book: false });
+
+  const pickUpKey = () => {
+    setInventory({...inventory, key: true});
   };
 
-  return <div>{isVisible && <FirstKey toggleKey={toggleKey} />}</div>;
+  return (
+    <div>{(inventory.key === false) && <FirstKey pickUpKey={pickUpKey} />}</div>
+  );
 }
 
 export default App;
