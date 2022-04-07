@@ -1,12 +1,15 @@
 import "./App.css";
-// import { Room } from "./components/Room";
+import { useState } from "react";
+import { Room } from "./components/Room";
 import {GreetingPage} from "./GreetingPage"
 function Game() {
+  const [page, setPage] = useState('GreetingPage')
   return (
-    <section className="game">
-      <GreetingPage/>
-      {/* <Room /> */}
-    </section>
+    <div className="game">
+      {page === "Room" && <Room/>}
+      {page === "GreetingPage" && <GreetingPage/>}
+     
+    </div>
   );
 }
 
