@@ -9,18 +9,6 @@ export const GreetingPage = (props) => {
     <button align="center"className="play-game" onClick={(props.greetingFn) } >Time To Escape!</button>
 
   </div>
- /* import {React} from 'react';
-  import {useState} from 'react';
-  
-  import myImage from "./keyimg.png";
-  export const FirstKey = () => {
-    const [disable, setDisable] = useState(false);
-    return <button className="firstKey" disabled={disable} onClick={() => 
-     setDisable(true)}><img src={myImage} height="100" width="100"/>Collect Key</button>
-  }; */
 
 }
 
-// Set up view with description
-// Start button to bring you to game
-// As a user, So I know what type of game I'm playing I want to see an description page with a start button
