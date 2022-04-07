@@ -1,0 +1,7 @@
+.wall {
+  width: 1000px;
+  margin: auto;
+  z-index: -1;
+  position: absolute;
+  left: 500px;
+}

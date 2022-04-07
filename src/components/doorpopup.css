@@ -1,0 +1,32 @@
+.doorpopup-box {
+  position: absolute;
+  left: 600px;
+  top: 10px;
+  width: 1500px;
+  height: 100vh;
+  z-index: 2;
+}
+
+.box {
+  position: absolute;
+  width: 700px;
+  min-height: 400px;
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 4px;
+  left: 40px;
+  bottom: 40px;
+  padding: 20px;
+  overflow: auto;
+  z-index: 2;
+}
+
+.btn-close {
+  cursor: pointer;
+  border: 1px solid #999;
+  border-radius: 50%;
+  position: absolute;
+  right: 527px;
+  top: 80px;
+  z-index: 2;
+}
