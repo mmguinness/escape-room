@@ -14,7 +14,7 @@ function Game() {
   return (
     <section className="game">
       <Room />
-    <div>{(inventory.key === false) && <FirstKey pickUpKey={pickUpKey} />}</div>
+      <div>{(inventory.key === false) && <FirstKey pickUpKey={pickUpKey} />}</div>
     </section>
   );
 }
