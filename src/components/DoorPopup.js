@@ -4,8 +4,8 @@ import "./doorpopup.css";
 const DoorPopup = props => {
   return (
     <div className="doorpopup-box">
-      <div className="box">
-        <button className="btn-close" onClick={props.handleClose}>
+      <div className="doorbox">
+        <button className="doorbtn-close" onClick={props.handleClose}>
           x
         </button>
         {props.content}

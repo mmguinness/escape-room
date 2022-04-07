@@ -1,4 +1,4 @@
-.doorpopup-box {
+.monitorpopup-box {
   position: absolute;
   left: 600px;
   top: 10px;
@@ -7,7 +7,7 @@
   z-index: 2;
 }
 
-.doorbox {
+.monitorbox {
   position: absolute;
   width: 700px;
   min-height: 400px;
@@ -21,12 +21,12 @@
   z-index: 2;
 }
 
-.doorbtn-close {
+.monitorbtn-close {
   cursor: pointer;
   border: 1px solid #999;
   border-radius: 50%;
   position: absolute;
-  right: 527px;
-  top: 80px;
+  right: 0px;
+  top: 0px;
   z-index: 2;
 }
