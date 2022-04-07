@@ -24,6 +24,18 @@ export const Monitor = () => {
           content={
             <div>
               <h3>Puzzle</h3>
+              <div>
+                <form>
+                  Roses are <input type="text" id="wordOne" name="wordOne" />
+                  <br />
+                  <br />
+                  <input type="text" id="wordOne" name="wordOne" /> are blue
+                </form>{" "}
+                <br />
+                I love coding <br />
+                <br />
+                You should too!
+              </div>
             </div>
           }
         />
