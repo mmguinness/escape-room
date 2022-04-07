@@ -7,7 +7,7 @@ function Game() {
   return (
     <div className="game">
       {page === "Room" && <Room/>}
-      {page === "GreetingPage" && <GreetingPage/>}
+      {page === "GreetingPage" && <GreetingPage greetingFn={() => setPage('Room')}/>}
      
     </div>
   );
