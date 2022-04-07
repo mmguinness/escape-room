@@ -1,18 +1,16 @@
+import { React } from "react";
+import { useState } from "react";
+import { FirstKey } from "./components/FirstKey";
+import "./App.css";
 
-import './App.css';
-import {FirstKey} from "./components/FirstKey";
 function App() {
-  return (
-  <div>Escape Room
 
-    <FirstKey/>
-     
-    </div>
-  
+  const [isVisible, setIsVisible] = useState(true);
+  const toggleKey = () => {
+    setIsVisible(!isVisible);
+  };
 
- 
-  
-  );
+  return <div>{isVisible && <FirstKey toggleKey={toggleKey} />}</div>;
 }
 
 export default App;
