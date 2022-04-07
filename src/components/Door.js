@@ -11,9 +11,13 @@ export const Door = () => {
 
   return (
     <article>
-      <button onClick={toggleDoorPopup}>
-        <img className="door" src="door.png" alt="" />
-      </button>
+      <img
+        onClick={toggleDoorPopup}
+        role="button"
+        className="door"
+        src="door.png"
+        alt=""
+      />
       {isOpen && (
         <DoorPopup
           handleClose={toggleDoorPopup}
