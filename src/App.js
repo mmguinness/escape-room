@@ -14,21 +14,12 @@ function Game() {
     setInventory({ ...inventory, key: true });
     setKeyPopup(!keyPopup);
   };
-console.log(inventory);
+  console.log(inventory);
   return (
     <section className="game">
       <Room />
       <div>{inventory.key === false && <FirstKey pickUpKey={pickUpKey} />}</div>
-      {keyPopup && (
-        < KeyPopupBox
-          handleCloseBox={pickUpKey}
-          content={
-            <div>
-              <h3>You picked up a key!</h3>
-            </div>
-          }
-        />
-      )}
+      {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
     </section>
   );
 }

@@ -8,10 +8,11 @@ export const KeyPopupBox = (props) => {
         <button className="btn-close" onClick={props.handleCloseBox}>
           x
         </button>
-        {props.content}
+        <div>
+          <h3>You picked up a key!</h3>
+        </div>
       </div>
     </div>
   );
 };
 
-// export default KeyPopupBox;
