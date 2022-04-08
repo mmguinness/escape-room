@@ -20,7 +20,7 @@ export const Room = () => {
     <article>
       <Door></Door>
       <Monitor></Monitor>
-      <img className="room" src="Plain-White-Walls.jpg" alt="" />
+      <img className="room" src="stock-escape-room-interior.png" alt="" />
       <div>{inventory.key === false && <FirstKey pickUpKey={pickUpKey} />}</div>
       {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
     </article>

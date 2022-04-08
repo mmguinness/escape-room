@@ -7,7 +7,7 @@ export const GreetingPage = (props) => {
       Using your investigative skills, you must search for clues and solve a series of puzzles to 
       escape before the timer runs out!
       </p>
-    <button align="center" className="play-game" onClick={(props.greetingFn)}>Time To Escape!</button>
+    <button className="play-game" onClick={(props.greetingFn)}>Time To Escape!</button>
   </div>
 
 }
