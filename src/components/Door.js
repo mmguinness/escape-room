@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import DoorPopup from "./DoorPopup";
 import "./door.css";
 
-export const Door = () => {
-  const [isOpen, setIsOpen] = useState(false);
+export const Door = (props) => {
+  const [doorPopup, setDoorPopup] = useState(false);
 
   const toggleDoorPopup = () => {
-    setIsOpen(!isOpen);
+    setDoorPopup(!doorPopup);
   };
 
   return (
@@ -18,14 +18,11 @@ export const Door = () => {
         src="door.png"
         alt=""
       />
-      {isOpen && (
+      {doorPopup && (
         <DoorPopup
           handleClose={toggleDoorPopup}
-          content={
-            <div>
-              <h3>Door is locked!</h3>
-            </div>
-          }
+          inventory={props.inventory}
+      
         />
       )}
     </article>

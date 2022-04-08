@@ -17,10 +17,23 @@ export const Room = () => {
 
   return (
     <article>
-      <Door></Door>
+      <Door inventory={inventory}/>
       <img className="room" src="Plain-White-Walls.jpg" alt="" />
       <div>{(inventory.key === false) && <FirstKey pickUpKey={pickUpKey} />}</div>
       {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
     </article>
   );
 };
+
+/* 
+
+*/
+
+/*  As a player, 
+So I can interact with my environment, 
+I want to be able to use the key and open the door 
+
+Ask if you have the key
+Option to say yes
+If yes door opens
+*/
