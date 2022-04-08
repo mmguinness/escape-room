@@ -3,7 +3,7 @@ import Popover from "@mui/material/Popover";
 
 const DoorPopup = props => {
   return (
-        <>
+    <>
       <Popover
         onClose={props.handleClose}
         open={true}
