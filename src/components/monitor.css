@@ -11,8 +11,8 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid black;
-  width: 40px;
-  font-size: 15px;
+  width: 50px;
+  font-size: 16px;
   color: red;
 }
 
@@ -20,7 +20,7 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid black;
-  width: 80px;
-  font-size: 15px;
+  width: 50px;
+  font-size: 16px;
   color: blue;
 }

@@ -12,11 +12,13 @@ export const Monitor = () => {
   };
 
   const handleChangeTwo = eventTwo => {
-    setInputTwo(eventTwo.target.value.toLowerCase());
+    const word0 = eventTwo.target.value.toLowerCase();
+    const word2 = word0.charAt(0).toUpperCase() + word0.slice(1);
+    setInputTwo(word2);
   };
 
   const checkInputs = () => {
-    if (inputOne === "red" && inputTwo === "violets") {
+    if (inputOne === "red" && inputTwo === "Violets") {
       return console.log("correct answer");
     } else {
       console.log("try again");
