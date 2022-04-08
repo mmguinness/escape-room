@@ -22,12 +22,8 @@ export const Door = (props) => {
         <DoorPopup
           handleClose={toggleDoorPopup}
           inventory={props.inventory}
-      
         />
       )}
     </article>
-    // <button onClick={() => window.open("http://www.google.com")}>
-    //   <img className="door" src="door.png" alt="" />
-    // </button>
   );
 };
