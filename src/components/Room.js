@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Door } from "./Door";
 import { FirstKey } from "./FirstKey";
 import { KeyPopupBox } from "./KeyPopupBox";
+import { Monitor } from "./Monitor";
 
 export const Room = () => {
   const [inventory, setInventory] = useState({ key: false, book: false });
@@ -18,8 +19,9 @@ export const Room = () => {
   return (
     <article>
       <Door></Door>
+      <Monitor></Monitor>
       <img className="room" src="Plain-White-Walls.jpg" alt="" />
-      <div>{(inventory.key === false) && <FirstKey pickUpKey={pickUpKey} />}</div>
+      <div>{inventory.key === false && <FirstKey pickUpKey={pickUpKey} />}</div>
       {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
     </article>
   );
