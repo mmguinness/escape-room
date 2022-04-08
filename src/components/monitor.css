@@ -6,3 +6,21 @@
   left: 700px;
   position: absolute;
 }
+
+.wordOne {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 40px;
+  font-size: 15px;
+  color: red;
+}
+
+.wordTwo {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 80px;
+  font-size: 15px;
+  color: blue;
+}
