@@ -68,6 +68,8 @@ export const Monitor = () => {
                 <br />
                 <br />
                 <button onClick={checkInputs}>Submit</button>
+                {/* normal object variable can not be seen here for react.
+                We had to create a state named answer to be able to pull it here */}
                 <h3 className="pin">{answer}</h3>
               </div>
             </div>
