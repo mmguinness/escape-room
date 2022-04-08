@@ -1,18 +1,17 @@
 import React from "react";
-// import "./keypopup.css";
+import Popover from "@mui/material/Popover";
 
 export const KeyPopupBox = (props) => {
   return (
-    <div className="doorpopup-box">
-      <div className="box">
-        <button className="btn-close" onClick={props.handleCloseBox}>
-          x
-        </button>
-        <div>
-          <h3>You picked up a key!</h3>
-        </div>
-      </div>
-    </div>
+    <>
+      <Popover
+        onClose={props.handleCloseBox}
+        open={true}
+        anchorReference="anchorPosition"
+        anchorPosition={{ top: 600, left: 900 }}
+      >
+        You picked up a key!
+      </Popover>
+    </>
   );
 };
-

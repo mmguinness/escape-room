@@ -1,16 +1,18 @@
 import React from "react";
-import "./doorpopup.css";
+import Popover from "@mui/material/Popover";
 
 const DoorPopup = props => {
   return (
-    <div className="doorpopup-box">
-      <div className="box">
-        <button className="btn-close" onClick={props.handleClose}>
-          x
-        </button>
-        {props.content}
-      </div>
-    </div>
+        <>
+      <Popover
+        onClose={props.handleClose}
+        open={true}
+        anchorReference="anchorPosition"
+        anchorPosition={{ top: 600, left: 900 }}
+      >
+        Door is locked!
+      </Popover>
+    </>
   );
 };
 
