@@ -4,11 +4,13 @@ import "./door.css";
 
 export const Door = (props) => {
   const [doorPopup, setDoorPopup] = useState(false);
-
+ 
+  
   const toggleDoorPopup = () => {
     setDoorPopup(!doorPopup);
   };
 
+ 
   return (
     <article>
       <img
@@ -22,6 +24,7 @@ export const Door = (props) => {
         <DoorPopup
           handleClose={toggleDoorPopup}
           inventory={props.inventory}
+          checkedButton={props.checkedButton}
         />
       )}
     </article>
