@@ -15,8 +15,9 @@ solve puzzles to complete the mystery, within a limited timeframe.
 * Integration testing: cypress
 
 # MVP
-* Click on clue and acquire key to escape room.
 
 ![Key_Diagram](click_key.png)
 
 ![Door_Diagram](click_door.png)
+
+* Click on clue and acquire key to escape room.
