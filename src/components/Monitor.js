@@ -6,6 +6,7 @@ export const Monitor = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [inputOne, setInputOne] = useState("");
   const [inputTwo, setInputTwo] = useState("");
+  const [answer, setAnswer] = useState("");
 
   const handleChangeOne = eventOne => {
     setInputOne(eventOne.target.value.toLowerCase());
@@ -19,9 +20,9 @@ export const Monitor = () => {
 
   const checkInputs = () => {
     if (inputOne === "red" && inputTwo === "Violets") {
-      return console.log("correct answer");
+      setAnswer("Safe Pin: 1234");
     } else {
-      console.log("try again");
+      setAnswer("Try again");
     }
   };
 
@@ -67,6 +68,7 @@ export const Monitor = () => {
                 <br />
                 <br />
                 <button onClick={checkInputs}>Submit</button>
+                <h3 className="pin">{answer}</h3>
               </div>
             </div>
           }

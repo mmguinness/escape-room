@@ -24,3 +24,11 @@
   font-size: 16px;
   color: blue;
 }
+
+.pin {
+  position: absolute;
+  left: 400px;
+  bottom: 250px;
+  color: blueviolet;
+  font-size: 30px;
+}
