@@ -1,19 +1,17 @@
 import React from "react";
 import Popover from "@mui/material/Popover";
 
-const DoorPopup = props => {
+export const KeyPopupBox = (props) => {
   return (
-        <>
+    <>
       <Popover
-        onClose={props.handleClose}
+        onClose={props.handleCloseBox}
         open={true}
         anchorReference="anchorPosition"
         anchorPosition={{ top: 600, left: 900 }}
       >
-        Door is locked!
+        You picked up a key!
       </Popover>
     </>
   );
 };
-
-export default DoorPopup;
