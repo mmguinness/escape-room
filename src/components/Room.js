@@ -5,6 +5,7 @@ import { FirstKey } from "./FirstKey";
 import { KeyPopupBox } from "./KeyPopupBox";
 import { Monitor } from "./Monitor";
 import { ClueOne } from "./clueOne";
+import { Book } from "./book";
 
 export const Room = () => {
   const [inventory, setInventory] = useState({ key: false, clueOne: false });
@@ -28,6 +29,7 @@ export const Room = () => {
       {inventory.key === false && <FirstKey pickUpKey={pickUpKey} />}
       {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
       <ClueOne pickUpClueOne={pickUpClueOne} />
+      <Book />
       <img className="room" src="Plain-White-Walls.jpg" alt="" />
     </article>
   );
