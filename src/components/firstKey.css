@@ -5,4 +5,5 @@
   height: auto;
   width: 40px;
   cursor: pointer;
+  z-index: 3;
 }

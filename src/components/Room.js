@@ -4,6 +4,7 @@ import { Door } from "./Door";
 import { FirstKey } from "./FirstKey";
 import { KeyPopupBox } from "./KeyPopupBox";
 import { Monitor } from "./Monitor";
+import { Safe } from "./Safe";
 import { ClueOne } from "./clueOne";
 import { Book } from "./book";
 
@@ -26,6 +27,7 @@ export const Room = () => {
     <article>
       <Door></Door>
       <Monitor></Monitor>
+      <Safe></Safe>
       {inventory.key === false && <FirstKey pickUpKey={pickUpKey} />}
       <img className="room" src="stock-escape-room-interior.png" alt="" />
       {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
