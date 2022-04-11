@@ -35,6 +35,7 @@ export const Safe = () => {
               <h3>Enter your pin</h3>
               <div>
                 <input
+                  type="number"
                   className="pinNumber"
                   value={inputPin}
                   onChange={handleChangePin}

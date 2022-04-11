@@ -7,6 +7,12 @@
   top: 425px;
 }
 
+.pinNumber::-webkit-outer-spin-button,
+.pinNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .pinNumber {
   width: 40px;
 }
