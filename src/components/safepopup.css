@@ -1,4 +1,4 @@
-.monitorpopup-box {
+.safepopup-box {
   position: absolute;
   left: 600px;
   bottom: 300px;
@@ -7,10 +7,10 @@
   z-index: 2;
 }
 
-.monitorbox {
+.safebox {
   position: absolute;
-  width: 500px;
-  height: 250px;
+  width: 130px;
+  height: 150px;
   background-color: white;
   border: 1px solid #999;
   border-radius: 4px;
@@ -21,7 +21,7 @@
   z-index: 2;
 }
 
-.monitorbtn-close {
+.safebtn-close {
   cursor: pointer;
   border: 1px solid #999;
   border-radius: 50%;

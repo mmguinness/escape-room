@@ -1,0 +1,12 @@
+.safe {
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  left: 555px;
+  top: 425px;
+}
+
+.pinNumber {
+  width: 40px;
+}
