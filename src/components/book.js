@@ -24,6 +24,7 @@ export const Book = (props) => {
           blankOne={props.blankOne}
           blankTwo={props.blankTwo}
           blankThree={props.blankThree}
+          blankFour={props.blankFour}
         />
       )}
     </div>

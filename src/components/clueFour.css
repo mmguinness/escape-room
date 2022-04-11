@@ -1,0 +1,27 @@
+.clueFour {
+  z-index: 2;
+  top: 250px;
+  left: 600px;
+  position: absolute;
+  height: 70px;
+}
+
+.word {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 50px;
+  font-size: 16px;
+  color: black;
+}
+
+.clueFourLetter {
+  background: yellow;
+  height: auto;
+  width: auto;
+  z-index: 2;
+  top: 250px;
+  left: 620px;
+  position: absolute;
+  z-index: 3;
+}

@@ -7,6 +7,7 @@ import { Monitor } from "./Monitor";
 import { ClueOne } from "./clueOne";
 import { ClueTwo } from "./clueTwo";
 import { ClueThree } from "./clueThree";
+import { ClueFour } from "./clueFour";
 import { Book } from "./book";
 
 export const Room = () => {
@@ -15,12 +16,14 @@ export const Room = () => {
     clueOne: false,
     clueTwo: false,
     clueThree: false,
+    clueFour: false
   });
 
   const [keyPopup, setKeyPopup] = useState(false);
   const [blankOne, setBlankOne] = useState(" blank ");
   const [blankTwo, setBlankTwo] = useState(" blank ");
   const [blankThree, setBlankThree] = useState(" blank ");
+  const [blankFour, setBlankFour] = useState(" blank ");
 
   const pickUpKey = () => {
     setInventory({ ...inventory, key: true });
@@ -45,8 +48,12 @@ export const Room = () => {
   const handleBlankThree = () => {
     setBlankThree(" time ");
   };
-
-  console.log(inventory);
+  const pickUpClueFour = () => {
+    setInventory({ ...inventory, clueFour: true });
+  };
+  const handleBlankFour = () => {
+    setBlankFour("Look ");
+  };
 
   return (
     <article>
@@ -70,11 +77,17 @@ export const Room = () => {
         blankThree={blankThree}
         handleBlankThree={handleBlankThree}
       />
+      <ClueFour
+        pickUpClueFour={pickUpClueFour}
+        blankFour={blankFour}
+        handleBlankFour={handleBlankFour}
+      />
       <Book
         inventory={inventory}
         blankOne={blankOne}
         blankTwo={blankTwo}
         blankThree={blankThree}
+        blankFour={blankFour}
       />
     </article>
   );
