@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 
 export const ClueOne = (props) => {
   const [clueOnePopup, setClueOnePopup] = useState(false);
-  const [inputOne, setInputOne] = useState("");
+  const [input, setinput] = useState("");
   const [answer, setAnswer] = useState("");
   const [clueOnWall, setClueOnWall] = useState(false);
   
@@ -14,11 +14,11 @@ export const ClueOne = (props) => {
     setClueOnePopup(!clueOnePopup);
   };
   const handleChange = (eventOne) => {
-    setInputOne(eventOne.target.value.toLowerCase());
+    setinput(eventOne.target.value.toLowerCase());
   };
 
   const checkInputs = () => {
-    if (inputOne === "erfect") {
+    if (input === "erfect") {
       setAnswer("K");
       setClueOnePopup(!clueOnePopup);
       setClueOnWall(true);
@@ -47,10 +47,10 @@ export const ClueOne = (props) => {
             <div>
               <Typography sx={{ p: 2 }}>
                 Practice
-                makes P
+                makes p
                 <input
                   className="word"
-                  value={inputOne}
+                  value={input}
                   onChange={handleChange}
                 ></input>
               </Typography>{" "}

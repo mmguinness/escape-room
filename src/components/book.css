@@ -1,8 +1,8 @@
 .book {
-  height: 100px;
+  height: 90px;
   width: auto;
   z-index: 2;
-  top: 335px;
+  top: 345px;
   left: 380px;
   position: absolute;
 }

@@ -4,12 +4,11 @@ import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
 
 export const BookPopup = (props) => {
+  const [blankOne, setBlankOne] = useState(" blank ");
 
-  // const [clueOneWord, setClueOneWord] = useState("testing")
-
-  // const showClueLetter = () => {
-  //   setClueOneWord("perfect")
-  // }
+  const handleBlankOne = () => {
+    setBlankOne("perfect");
+  };
 
   return (
     <>
@@ -24,15 +23,14 @@ export const BookPopup = (props) => {
           <br />
           Clues:
           <br />
-          It's not hard it's _______
+          It's not hard it's <strong>{blankOne}</strong>
+          <br />A stitch in <strong>{blankOne}</strong>saves nine
           <br />
-          A stitch in ______ saves nine
+          <strong>{blankOne}</strong> before you leap
           <br />
-          ______ before you leap
+          Practice makes
+          <strong>{blankOne}</strong>
           <br />
-          Practice makes _______
-          <br />
-          {/* {props.inventory.clueOne === true && showClueLetter} */}
         </Typography>
       </Popover>
     </>

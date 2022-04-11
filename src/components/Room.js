@@ -5,10 +5,11 @@ import { FirstKey } from "./FirstKey";
 import { KeyPopupBox } from "./KeyPopupBox";
 import { Monitor } from "./Monitor";
 import { ClueOne } from "./clueOne";
+import { ClueTwo } from "./clueTwo";
 import { Book } from "./book";
 
 export const Room = () => {
-  const [inventory, setInventory] = useState({ key: false, clueOne: false });
+  const [inventory, setInventory] = useState({ key: false, clueOne: false, clueTwo: false });
   const [keyPopup, setKeyPopup] = useState(false);
 
   const pickUpKey = () => {
@@ -19,6 +20,9 @@ export const Room = () => {
   const pickUpClueOne = () => {
     setInventory({ ...inventory, clueOne: true });
   };
+   const pickUpClueTwo = () => {
+     setInventory({ ...inventory, clueTwo: true });
+   };
 
   console.log(inventory);
 
@@ -30,7 +34,8 @@ export const Room = () => {
       <img className="room" src="stock-escape-room-interior.png" alt="" />
       {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
       <ClueOne pickUpClueOne={pickUpClueOne} />
-      <Book inventory={inventory}/>
+      <ClueTwo pickUpClueTwo={pickUpClueTwo} />
+      <Book inventory={inventory} />
     </article>
   );
 };

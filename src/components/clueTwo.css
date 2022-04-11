@@ -1,0 +1,26 @@
+.clueTwo {
+  z-index: 2;
+  top: 175px;
+  left: 335px;
+  position: absolute;
+}
+
+.word {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 50px;
+  font-size: 16px;
+  color: black;
+}
+
+.clueTwoLetter {
+  background: yellow;
+  height: auto;
+  width: auto;
+  z-index: 2;
+  top: 155px;
+  left: 350px;
+  position: absolute;
+  z-index: 3;
+}
