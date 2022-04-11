@@ -1,14 +1,14 @@
 .greetings {
-  background-image: url('../public/stock-escape-room-maze.png');
+  background-image: url("../public/stock-escape-room-maze.png");
   width: 1024px;
   height: 683px;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .welcome {
   position: relative;
   top: 20px;
-  color:saddlebrown;
+  color: saddlebrown;
 }
 
 .game-explanation {
@@ -22,8 +22,17 @@
 
 .play-game {
   top: 380px;
-  left: 360px;
-  width: 290px;
+  left: 270px;
+  width: 470px;
   height: 80px;
   position: absolute;
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+}
+
+.play-game:hover {
+  border: 3px solid !important;
+  color: purple;
+  cursor: pointer;
 }
