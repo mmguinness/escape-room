@@ -22,6 +22,7 @@ export const ClueTwo = (props) => {
       setAnswer("A");
       setClueTwoPopup(!clueTwoPopup);
       setClueOnWall(true);
+      props.handleBlankTwo();
     }
   };
 

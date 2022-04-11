@@ -17,7 +17,14 @@ export const Book = (props) => {
         src="books.png"
         alt=""
       />
-      {bookPopup && <BookPopup inventory={props.inventory} toggleBookPopup={toggleBookPopup} />}
+      {bookPopup && (
+        <BookPopup
+          inventory={props.inventory}
+          toggleBookPopup={toggleBookPopup}
+          blankOne={props.blankOne}
+          blankTwo={props.blankTwo}
+        />
+      )}
     </div>
   );
 };

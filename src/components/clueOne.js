@@ -22,6 +22,7 @@ export const ClueOne = (props) => {
       setAnswer("K");
       setClueOnePopup(!clueOnePopup);
       setClueOnWall(true);
+      props.handleBlankOne();
     } else {
       setAnswer("Try again");
     }

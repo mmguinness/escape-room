@@ -1,14 +1,8 @@
 import React from "react";
-import { useState } from "react";
 import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
 
 export const BookPopup = (props) => {
-  const [blankOne, setBlankOne] = useState(" blank ");
-
-  const handleBlankOne = () => {
-    setBlankOne("perfect");
-  };
 
   return (
     <>
@@ -23,13 +17,13 @@ export const BookPopup = (props) => {
           <br />
           Clues:
           <br />
-          It's not hard it's <strong>{blankOne}</strong>
-          <br />A stitch in <strong>{blankOne}</strong>saves nine
+          It's not hard it's <strong>{props.blankTwo}</strong>
+          <br />A stitch in <strong>{props.blankOne}</strong>saves nine
           <br />
-          <strong>{blankOne}</strong> before you leap
+          <strong>{props.blankOne}</strong> before you leap
           <br />
           Practice makes
-          <strong>{blankOne}</strong>
+          <strong>{props.blankOne}</strong>
           <br />
         </Typography>
       </Popover>

@@ -11,6 +11,8 @@ import { Book } from "./book";
 export const Room = () => {
   const [inventory, setInventory] = useState({ key: false, clueOne: false, clueTwo: false });
   const [keyPopup, setKeyPopup] = useState(false);
+  const [blankOne, setBlankOne] = useState(" blank ");
+  const [blankTwo, setBlankTwo] = useState(" blank ");
 
   const pickUpKey = () => {
     setInventory({ ...inventory, key: true });
@@ -20,9 +22,16 @@ export const Room = () => {
   const pickUpClueOne = () => {
     setInventory({ ...inventory, clueOne: true });
   };
-   const pickUpClueTwo = () => {
-     setInventory({ ...inventory, clueTwo: true });
-   };
+  const handleBlankOne = () => {
+    setBlankOne(" perfect");
+  };
+
+  const pickUpClueTwo = () => {
+    setInventory({ ...inventory, clueTwo: true });
+  };
+  const handleBlankTwo = () => {
+    setBlankTwo(" new");
+  };
 
   console.log(inventory);
 
@@ -33,9 +42,17 @@ export const Room = () => {
       {inventory.key === false && <FirstKey pickUpKey={pickUpKey} />}
       <img className="room" src="stock-escape-room-interior.png" alt="" />
       {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
-      <ClueOne pickUpClueOne={pickUpClueOne} />
-      <ClueTwo pickUpClueTwo={pickUpClueTwo} />
-      <Book inventory={inventory} />
+      <ClueOne
+        pickUpClueOne={pickUpClueOne}
+        blankOne={blankOne}
+        handleBlankOne={handleBlankOne}
+      />
+      <ClueTwo
+        pickUpClueTwo={pickUpClueTwo}
+        blankTwo={blankTwo}
+        handleBlankTwo={handleBlankTwo}
+      />
+      <Book inventory={inventory} blankOne={blankOne} blankTwo={blankTwo} />
     </article>
   );
 };
