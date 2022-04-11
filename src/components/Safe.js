@@ -11,6 +11,10 @@ export const Safe = () => {
     setInputPin(event.target.value);
   };
 
+  const resetValue = () => {
+    setInputPin("");
+  };
+
   const checkInput = () => {
     if (inputPin === "1234") {
       setAnswer("Correct Pin");
@@ -48,8 +52,8 @@ export const Safe = () => {
               <h3 className="pinResponse">{answer}</h3>
               <div>
                 <input
-                  type="number"
                   className="pinNumber"
+                  type="number"
                   value={inputPin}
                   onChange={handleChangePin}
                 ></input>
@@ -57,6 +61,9 @@ export const Safe = () => {
                 <br />
                 <button className="safeSubmit" onClick={checkInput}>
                   Submit
+                </button>
+                <button className="safeReset" onClick={resetValue}>
+                  X
                 </button>
               </div>
             </article>
