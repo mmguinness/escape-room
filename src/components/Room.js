@@ -30,7 +30,7 @@ export const Room = () => {
       <img className="room" src="stock-escape-room-interior.png" alt="" />
       {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
       <ClueOne pickUpClueOne={pickUpClueOne} />
-      <Book />
+      <Book inventory={inventory}/>
     </article>
   );
 };

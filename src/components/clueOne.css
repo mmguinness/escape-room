@@ -2,8 +2,8 @@
   height: auto;
   width: auto;
   z-index: 2;
-  top: 200px;
-  left: 300px;
+  top: 285px;
+  left: 345px;
   position: absolute;
 }
 
@@ -21,7 +21,8 @@
   height: auto;
   width: auto;
   z-index: 2;
-  top: 150px;
-  left: 300px;
+  top: 280px;
+  left: 350px;
   position: absolute;
+  z-index: 3;
 }
