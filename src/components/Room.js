@@ -6,7 +6,7 @@ import { KeyPopupBox } from "./KeyPopupBox";
 import { Monitor } from "./Monitor";
 import { ClueOne } from "./clueOne";
 import { Book } from "./book";
-import CountdownTimer from './CountdownTimer';
+import CountdownTimer from '../CountdownTimer';
 
 
 export const Room = () => {
@@ -38,9 +38,9 @@ export const Room = () => {
       {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
       <ClueOne pickUpClueOne={pickUpClueOne} />
       <Book />
-        <div>
-          <h1>Countdown Timer</h1>
-          <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+      <div>
+        <h1>Countdown Timer</h1>
+        <div>  <CountdownTimer targetDate={dateTimeAfterThreeDays} /></div>
       </div>
     </article>
   );

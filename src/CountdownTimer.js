@@ -1,6 +1,7 @@
 import React from 'react';
 import { useCountdown } from './hooks/useCountdown';
 import DateTimeDisplay from './DateTimeDisplay';
+import "./components/room.css";
 
 const ExpiredNotice = () => {
   return (
@@ -14,12 +15,7 @@ const ExpiredNotice = () => {
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
     <div className="show-counter">
-      <a
-        href="https://tapasadhikary.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="countdown-link"
-      >
+      
         <DateTimeDisplay value={days} type={'Days'} isDanger={days <= 3} />
         <p>:</p>
         <DateTimeDisplay value={hours} type={'Hours'} isDanger={false} />
@@ -27,7 +23,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
         <DateTimeDisplay value={minutes} type={'Mins'} isDanger={false} />
         <p>:</p>
         <DateTimeDisplay value={seconds} type={'Seconds'} isDanger={false} />
-      </a>
+     
     </div>
   );
 };
