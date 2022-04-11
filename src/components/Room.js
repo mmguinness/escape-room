@@ -6,13 +6,21 @@ import { KeyPopupBox } from "./KeyPopupBox";
 import { Monitor } from "./Monitor";
 import { ClueOne } from "./clueOne";
 import { ClueTwo } from "./clueTwo";
+import { ClueThree } from "./clueThree";
 import { Book } from "./book";
 
 export const Room = () => {
-  const [inventory, setInventory] = useState({ key: false, clueOne: false, clueTwo: false });
+  const [inventory, setInventory] = useState({
+    key: false,
+    clueOne: false,
+    clueTwo: false,
+    clueThree: false,
+  });
+
   const [keyPopup, setKeyPopup] = useState(false);
   const [blankOne, setBlankOne] = useState(" blank ");
   const [blankTwo, setBlankTwo] = useState(" blank ");
+  const [blankThree, setBlankThree] = useState(" blank ");
 
   const pickUpKey = () => {
     setInventory({ ...inventory, key: true });
@@ -25,12 +33,17 @@ export const Room = () => {
   const handleBlankOne = () => {
     setBlankOne(" perfect");
   };
-
   const pickUpClueTwo = () => {
     setInventory({ ...inventory, clueTwo: true });
   };
   const handleBlankTwo = () => {
     setBlankTwo(" new");
+  };
+  const pickUpClueThree = () => {
+    setInventory({ ...inventory, clueThree: true });
+  };
+  const handleBlankThree = () => {
+    setBlankThree(" time ");
   };
 
   console.log(inventory);
@@ -52,7 +65,17 @@ export const Room = () => {
         blankTwo={blankTwo}
         handleBlankTwo={handleBlankTwo}
       />
-      <Book inventory={inventory} blankOne={blankOne} blankTwo={blankTwo} />
+      <ClueThree
+        pickUpClueThree={pickUpClueThree}
+        blankThree={blankThree}
+        handleBlankThree={handleBlankThree}
+      />
+      <Book
+        inventory={inventory}
+        blankOne={blankOne}
+        blankTwo={blankTwo}
+        blankThree={blankThree}
+      />
     </article>
   );
 };

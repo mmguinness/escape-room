@@ -1,0 +1,27 @@
+.clueThree {
+  z-index: 2;
+  top: 180px;
+  left: 600px;
+  position: absolute;
+  height: 50px;
+}
+
+.word {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 50px;
+  font-size: 16px;
+  color: black;
+}
+
+.clueThreeLetter {
+  background: yellow;
+  height: auto;
+  width: auto;
+  z-index: 2;
+  top: 155px;
+  left: 640px;
+  position: absolute;
+  z-index: 3;
+}

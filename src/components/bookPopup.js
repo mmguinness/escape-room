@@ -18,7 +18,7 @@ export const BookPopup = (props) => {
           Clues:
           <br />
           It's not hard it's <strong>{props.blankTwo}</strong>
-          <br />A stitch in <strong>{props.blankOne}</strong>saves nine
+          <br />A stitch in <strong>{props.blankThree}</strong>saves nine
           <br />
           <strong>{props.blankOne}</strong> before you leap
           <br />

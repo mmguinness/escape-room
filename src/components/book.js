@@ -23,6 +23,7 @@ export const Book = (props) => {
           toggleBookPopup={toggleBookPopup}
           blankOne={props.blankOne}
           blankTwo={props.blankTwo}
+          blankThree={props.blankThree}
         />
       )}
     </div>
