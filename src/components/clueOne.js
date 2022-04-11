@@ -18,7 +18,7 @@ export const ClueOne = (props) => {
   };
 
   const checkInputs = () => {
-    if (input === "erfect") {
+    if (input === "perfect") {
       setAnswer("K");
       setClueOnePopup(!clueOnePopup);
       setClueOnWall(true);
@@ -48,7 +48,7 @@ export const ClueOne = (props) => {
             <div>
               <Typography sx={{ p: 2 }}>
                 Practice
-                makes p
+                makes 
                 <input
                   className="word"
                   value={input}
