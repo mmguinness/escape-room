@@ -1,11 +1,9 @@
-.clueOne {
-  height: auto;
-  width: auto;
+.clueFour {
   z-index: 2;
-  top: 285px;
-  left: 345px;
+  top: 250px;
+  left: 600px;
   position: absolute;
-  cursor: pointer;
+  height: 70px;
 }
 
 .word {
@@ -17,16 +15,13 @@
   color: black;
 }
 
-.clueOneLetter {
+.clueFourLetter {
   background: yellow;
   height: auto;
   width: auto;
   z-index: 2;
-  top: 280px;
-  left: 350px;
+  top: 250px;
+  left: 620px;
   position: absolute;
   z-index: 3;
 }
-
-
-

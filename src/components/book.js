@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BookPopup } from "./bookPopup";
 import "./book.css";
 
-export const Book = () => {
+export const Book = (props) => {
   const [bookPopup, setBookPopup] = useState(false);
 
   const toggleBookPopup = () => {
@@ -17,7 +17,16 @@ export const Book = () => {
         src="books.png"
         alt=""
       />
-      {bookPopup && <BookPopup toggleBookPopup={toggleBookPopup} />}
+      {bookPopup && (
+        <BookPopup
+          inventory={props.inventory}
+          toggleBookPopup={toggleBookPopup}
+          blankOne={props.blankOne}
+          blankTwo={props.blankTwo}
+          blankThree={props.blankThree}
+          blankFour={props.blankFour}
+        />
+      )}
     </div>
   );
 };

@@ -3,6 +3,7 @@ import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
 
 export const BookPopup = (props) => {
+
   return (
     <>
       <Popover
@@ -13,7 +14,22 @@ export const BookPopup = (props) => {
       >
         <Typography sx={{ p: 2 }}>
           A stack of books about common sayings and proverbs.
-        </Typography>{" "}
+          <br />
+          Clues:
+          <br />
+          It's not hard it's <strong>{props.blankTwo}</strong>
+          <br />A stitch in <strong>{props.blankThree}</strong>saves nine
+          <br />
+          <strong>{props.blankFour}</strong> before you leap
+          <br />
+          Practice makes
+          <strong>{props.blankOne}</strong>
+          <br />
+          <strong>{props.blankOne}</strong> speak louder than words
+          <br />
+          An <strong>{props.blankOne}</strong> a day keeps the doctor away
+          <br />
+        </Typography>
       </Popover>
     </>
   );

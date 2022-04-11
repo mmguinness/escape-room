@@ -5,8 +5,7 @@ import Typography from "@mui/material/Typography";
 
 export const ClueOne = (props) => {
   const [clueOnePopup, setClueOnePopup] = useState(false);
-  const [inputOne, setInputOne] = useState("");
-  const [inputTwo, setInputTwo] = useState("");
+  const [input, setinput] = useState("");
   const [answer, setAnswer] = useState("");
   const [clueOnWall, setClueOnWall] = useState(false);
   
@@ -14,18 +13,16 @@ export const ClueOne = (props) => {
     props.pickUpClueOne();
     setClueOnePopup(!clueOnePopup);
   };
-  const handleChangeOne = (eventOne) => {
-    setInputOne(eventOne.target.value.toLowerCase());
-  };
-  const handleChangeTwo = (eventTwo) => {
-    setInputTwo(eventTwo.target.value.toLowerCase());
+  const handleChange = (eventOne) => {
+    setinput(eventOne.target.value.toLowerCase());
   };
 
   const checkInputs = () => {
-    if (inputOne === "ractice" && inputTwo === "erfect") {
+    if (input === "perfect") {
       setAnswer("K");
       setClueOnePopup(!clueOnePopup);
       setClueOnWall(true);
+      props.handleBlankOne();
     } else {
       setAnswer("Try again");
     }
@@ -50,16 +47,12 @@ export const ClueOne = (props) => {
           content={
             <div>
               <Typography sx={{ p: 2 }}>
-                P<input
-                  className="word"
-                  value={inputOne}
-                  onChange={handleChangeOne}
-                ></input>
-                 makes P
+                Practice
+                makes 
                 <input
                   className="word"
-                  value={inputTwo}
-                  onChange={handleChangeTwo}
+                  value={input}
+                  onChange={handleChange}
                 ></input>
               </Typography>{" "}
             </div>
