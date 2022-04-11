@@ -24,7 +24,7 @@ export const Room = () => {
 
   console.log(inventory);
 
-  const THIRTY_MINS = 30 * 60 * 1000;
+  const THIRTY_MINS = 3 * 60 * 1000;
   const NOW_IN_MS = new Date().getTime();
 
   const TimeAfterThirtyMinutes = NOW_IN_MS + THIRTY_MINS;
@@ -39,7 +39,6 @@ export const Room = () => {
       <ClueOne pickUpClueOne={pickUpClueOne} />
       <Book />
       <div>
-        <h1>Countdown Timer</h1>
         <div>  <CountdownTimer targetDate={TimeAfterThirtyMinutes} /></div>
       </div>
     </article>

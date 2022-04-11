@@ -6,20 +6,29 @@
 }
 
 .expired-notice {
-  text-align: center;
   padding: 2rem;
-  border: 1px solid #ebebeb;
   border-radius: 0.25rem;
   margin: 0.5rem;
 }
 
 .expired-notice > span {
+  position: absolute;
+  right: 400px;
+  top: 40px;
+  z-index: 2;
+
   font-size: 2.5rem;
   font-weight: bold;
   color: red;
 }
 
 .expired-notice > p {
+  position: absolute;
+  right: 450px;
+  top: 70px;
+  z-index: 2;
+
+  color: red;
   font-size: 1.5rem;
 }
 

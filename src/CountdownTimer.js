@@ -15,9 +15,9 @@ const ExpiredNotice = () => {
 const ShowCounter = ({ minutes, seconds }) => {
   return (
     <div className="show-counter">
-        <DateTimeDisplay value={minutes} type={'Mins'} isDanger={minutes <= 2} />
+        <DateTimeDisplay value={minutes} type={'Mins'} isDanger={minutes <= 1} />
         <p>:</p>
-        <DateTimeDisplay value={seconds} type={'Seconds'} isDanger={false} />
+        <DateTimeDisplay value={seconds} type={'Seconds'} isDanger={minutes <= 1} />
     </div>
   );
 };
