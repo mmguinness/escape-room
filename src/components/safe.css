@@ -7,6 +7,15 @@
   top: 425px;
 }
 
+.openSafe {
+  position: absolute;
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  left: 555px;
+  top: 425px;
+}
+
 .pinNumber::-webkit-outer-spin-button,
 .pinNumber::-webkit-inner-spin-button {
   -webkit-appearance: none;

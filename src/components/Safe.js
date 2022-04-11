@@ -6,6 +6,8 @@ export const Safe = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [inputPin, setInputPin] = useState("");
   const [answer, setAnswer] = useState("Enter your pin");
+  const [openSafe, setOpenSafe] = useState(false);
+  const [closedSafe, setClosedSafe] = useState(true);
 
   const handleChangePin = event => {
     setInputPin(event.target.value);
@@ -19,8 +21,8 @@ export const Safe = () => {
     if (inputPin === "1234") {
       setAnswer("Correct Pin");
       setTimeout(closePopup, 1000);
-      // closedSafe(false)
-      // opensafe(true)
+      setOpenSafe(true);
+      setClosedSafe(false);
     } else {
       setAnswer("Incorrect Pin");
     }
@@ -36,13 +38,16 @@ export const Safe = () => {
 
   return (
     <section>
-      <img
-        className="safe"
-        onClick={toggleSafePopup}
-        role="button"
-        src="closedsafe.jpg"
-        alt=""
-      />
+      {openSafe && <img className="openSafe" src="opensafe.jpg" alt="" />}
+      {closedSafe && (
+        <img
+          className="safe"
+          onClick={toggleSafePopup}
+          role="button"
+          src="closedsafe.jpg"
+          alt=""
+        />
+      )}
       {isOpen && (
         <SafePopup
           handleClose={toggleSafePopup}
