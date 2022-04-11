@@ -16,3 +16,7 @@
 .pinNumber {
   width: 40px;
 }
+
+.pinResponse {
+  font-family: Arial, Helvetica, sans-serif;
+}

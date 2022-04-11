@@ -5,13 +5,26 @@ import "./safe.css";
 export const Safe = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [inputPin, setInputPin] = useState("");
-  const [answer, setAnswer] = useState("");
+  const [answer, setAnswer] = useState("Enter your pin");
 
   const handleChangePin = event => {
     setInputPin(event.target.value);
+  };
+
+  const checkInput = () => {
     if (inputPin === "1234") {
-      setAnswer("here is the key");
+      setAnswer("Correct Pin");
+      setTimeout(closePopup, 1000);
+      // setKey(true)
+      // closedSafe(false)
+      // opensafe(true)
+    } else {
+      setAnswer("Incorrect Pin");
     }
+  };
+
+  const closePopup = () => {
+    setIsOpen(false);
   };
 
   const toggleSafePopup = () => {
@@ -32,7 +45,7 @@ export const Safe = () => {
           handleClose={toggleSafePopup}
           content={
             <article>
-              <h3>Enter your pin</h3>
+              <h3 className="pinResponse">{answer}</h3>
               <div>
                 <input
                   type="number"
@@ -40,7 +53,11 @@ export const Safe = () => {
                   value={inputPin}
                   onChange={handleChangePin}
                 ></input>
-                {answer}
+                <br />
+                <br />
+                <button className="safeSubmit" onClick={checkInput}>
+                  Submit
+                </button>
               </div>
             </article>
           }
