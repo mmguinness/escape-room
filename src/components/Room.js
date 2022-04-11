@@ -24,7 +24,7 @@ export const Room = () => {
 
   console.log(inventory);
 
-  const THIRTY_MINS = 1 * 1 * 30 * 60 * 1000;
+  const THIRTY_MINS = 30 * 60 * 1000;
   const NOW_IN_MS = new Date().getTime();
 
   const TimeAfterThirtyMinutes = NOW_IN_MS + THIRTY_MINS;
