@@ -19,7 +19,6 @@ export const Safe = () => {
     if (inputPin === "1234") {
       setAnswer("Correct Pin");
       setTimeout(closePopup, 1000);
-      // setKey(true)
       // closedSafe(false)
       // opensafe(true)
     } else {
@@ -36,7 +35,7 @@ export const Safe = () => {
   };
 
   return (
-    <article>
+    <section>
       <img
         className="safe"
         onClick={toggleSafePopup}
@@ -70,6 +69,6 @@ export const Safe = () => {
           }
         />
       )}
-    </article>
+    </section>
   );
 };

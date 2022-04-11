@@ -1,8 +1,8 @@
 .firstKey {
   position: absolute;
-  top: 600px;
-  left: 600px;
+  top: 450px;
+  left: 560px;
   height: auto;
   width: 40px;
-  z-index: 4;
+  z-index: 3;
 }
