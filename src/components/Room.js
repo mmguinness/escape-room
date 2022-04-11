@@ -65,7 +65,7 @@ export const Room = () => {
 
   return (
     <article>
-      <Door></Door>
+      <Door inventory={inventory}></Door>
       <Monitor></Monitor>
       <Safe></Safe>
       {inventory.key === false && <FirstKey pickUpKey={pickUpKey} />}
