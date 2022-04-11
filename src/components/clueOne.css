@@ -5,6 +5,7 @@
   top: 285px;
   left: 345px;
   position: absolute;
+  cursor: pointer;
 }
 
 .word {
@@ -26,3 +27,6 @@
   position: absolute;
   z-index: 3;
 }
+
+
+
