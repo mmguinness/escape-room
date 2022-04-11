@@ -27,10 +27,10 @@ export const Room = () => {
       <Door></Door>
       <Monitor></Monitor>
       {inventory.key === false && <FirstKey pickUpKey={pickUpKey} />}
+      <img className="room" src="stock-escape-room-interior.png" alt="" />
       {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
       <ClueOne pickUpClueOne={pickUpClueOne} />
       <Book />
-      <img className="room" src="Plain-White-Walls.jpg" alt="" />
     </article>
   );
 };

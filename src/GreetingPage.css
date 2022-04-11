@@ -1,7 +1,8 @@
 .greetings {
-  background-image: url('../public/Plain-White-Walls.jpg');
+  background-image: url('../public/stock-escape-room-maze.png');
   width: 1024px;
   height: 683px;
+  background-size: cover; 
 }
 
 .welcome {
@@ -20,5 +21,9 @@
 }
 
 .play-game {
-  margin-left: 450px
+  top: 380px;
+  left: 360px;
+  width: 290px;
+  height: 80px;
+  position: absolute;
 }
