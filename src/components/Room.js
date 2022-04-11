@@ -6,6 +6,8 @@ import { KeyPopupBox } from "./KeyPopupBox";
 import { Monitor } from "./Monitor";
 import { ClueOne } from "./clueOne";
 import { Book } from "./book";
+import CountdownTimer from './CountdownTimer';
+
 
 export const Room = () => {
   const [inventory, setInventory] = useState({ key: false, clueOne: false });
@@ -22,6 +24,11 @@ export const Room = () => {
 
   console.log(inventory);
 
+  const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
+  const NOW_IN_MS = new Date().getTime();
+
+  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+
   return (
     <article>
       <Door></Door>
@@ -31,6 +38,10 @@ export const Room = () => {
       {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
       <ClueOne pickUpClueOne={pickUpClueOne} />
       <Book />
+        <div>
+          <h1>Countdown Timer</h1>
+          <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+      </div>
     </article>
   );
 };
