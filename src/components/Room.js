@@ -7,6 +7,8 @@ import { Monitor } from "./Monitor";
 import { Safe } from "./Safe";
 import { ClueOne } from "./clueOne";
 import { Book } from "./book";
+import CountdownTimer from '../CountdownTimer';
+
 
 export const Room = () => {
   const [inventory, setInventory] = useState({ key: false, clueOne: false });
@@ -23,6 +25,11 @@ export const Room = () => {
 
   console.log(inventory);
 
+  const THIRTY_MINS = 3 * 60 * 1000;
+  const NOW_IN_MS = new Date().getTime();
+
+  const TimeAfterThirtyMinutes = NOW_IN_MS + THIRTY_MINS;
+
   return (
     <article>
       <Door></Door>
@@ -33,6 +40,9 @@ export const Room = () => {
       {keyPopup && <KeyPopupBox handleCloseBox={pickUpKey} />}
       <ClueOne pickUpClueOne={pickUpClueOne} />
       <Book />
+      <div>
+        <div>  <CountdownTimer targetDate={TimeAfterThirtyMinutes} /></div>
+      </div>
     </article>
   );
 };

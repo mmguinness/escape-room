@@ -1,4 +1,3 @@
-import { valueToPercent } from "@mui/base";
 import "./GreetingPage.css";
 
 export const GreetingPage = props => {
