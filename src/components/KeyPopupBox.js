@@ -1,5 +1,6 @@
 import React from "react";
 import Popover from "@mui/material/Popover";
+import Typography from '@mui/material/Typography';
 
 export const KeyPopupBox = props => {
   return (
@@ -10,7 +11,7 @@ export const KeyPopupBox = props => {
         anchorReference="anchorPosition"
         anchorPosition={{ top: 600, left: 900 }}
       >
-        You picked up a key!
+        <Typography sx={{ p: 2 }}>You picked up a key!</Typography>
       </Popover>
     </>
   );
