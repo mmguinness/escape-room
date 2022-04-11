@@ -8,6 +8,7 @@ export const BookPopup = (props) => {
     <>
       <Popover
         onClose={props.toggleBookPopup}
+        onKeyPress={props.toggleBookPopup}
         open={true}
         anchorReference="anchorPosition"
         anchorPosition={{ top: 500, left: 300 }}

@@ -7,6 +7,7 @@ export const ClueFourPopup = (props) => {
     <>
       <Popover
         onClose={props.toggleClueFourPopup}
+        onKeyPress={props.toggleClueFourPopup}
         open={true}
         anchorReference="anchorPosition"
         anchorPosition={{ top: 500, left: 300 }}
