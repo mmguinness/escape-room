@@ -1,4 +1,6 @@
+import { valueToPercent } from '@mui/base';
 import './GreetingPage.css';
+
 export const GreetingPage = (props) => {
   return <div className="greetings">
     <br/>
@@ -9,6 +11,5 @@ export const GreetingPage = (props) => {
       </p>
     <button align="center" className="play-game" onClick={(props.greetingFn)}>Time To Escape!</button>
   </div>
-
 }
 
