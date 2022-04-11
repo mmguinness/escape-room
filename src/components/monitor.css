@@ -1,0 +1,36 @@
+.monitor {
+  height: auto;
+  width: 150px;
+  z-index: 1;
+  top: 325px;
+  left: 550px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.wordOne {
+  background: transparent;
+  border: none;
+  border-bottom: 2px dashed black;
+  width: 50px;
+  font-size: 16px;
+  color: red;
+  stroke-dasharray: 4, 10;
+}
+
+.wordTwo {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 50px;
+  font-size: 16px;
+  color: blue;
+}
+
+.pin {
+  position: absolute;
+  left: 250px;
+  bottom: 100px;
+  color: blueviolet;
+  font-size: 30px;
+}

@@ -1,0 +1,32 @@
+.safepopup-box {
+  position: absolute;
+  left: 600px;
+  bottom: 300px;
+  width: 1500px;
+  height: 100vh;
+  z-index: 2;
+}
+
+.safebox {
+  position: absolute;
+  width: 330px;
+  height: 250px;
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 4px;
+  left: 40px;
+  bottom: 40px;
+  padding: 20px;
+  overflow: auto;
+  z-index: 2;
+}
+
+.safebtn-close {
+  cursor: pointer;
+  border: 1px solid #999;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 2;
+}

@@ -1,8 +1,7 @@
 .door {
-  height: auto;
-  width: 150px;
   z-index: 1;
-  top: 210px;
-  left: 1200px;
+  top: 155px;
+  left: 0px;
   position: absolute;
+  cursor: pointer;
 }

@@ -7,7 +7,7 @@
   z-index: 2;
 }
 
-.box {
+.doorbox {
   position: absolute;
   width: 700px;
   min-height: 400px;
@@ -21,7 +21,7 @@
   z-index: 2;
 }
 
-.btn-close {
+.doorbtn-close {
   cursor: pointer;
   border: 1px solid #999;
   border-radius: 50%;

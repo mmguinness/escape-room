@@ -2,7 +2,7 @@ import React from "react";
 import Popover from "@mui/material/Popover";
 import Typography from '@mui/material/Typography';
 
-export const KeyPopupBox = (props) => {
+export const KeyPopupBox = props => {
   return (
     <>
       <Popover

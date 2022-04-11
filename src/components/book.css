@@ -1,0 +1,9 @@
+.book {
+  height: 100px;
+  width: auto;
+  z-index: 2;
+  top: 400px;
+  left: 300px;
+  position: absolute;
+  cursor: pointer;
+}
