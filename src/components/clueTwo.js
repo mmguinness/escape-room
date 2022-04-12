@@ -35,7 +35,6 @@ export const ClueTwo = (props) => {
         className="clueTwo"
         src="clue-2.png"
         alt=""
-        height="60"
       />
       {clueTwoPopup && (
         <ClueTwoPopup

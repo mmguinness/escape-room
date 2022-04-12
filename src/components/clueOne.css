@@ -1,9 +1,9 @@
 .clueOne {
-  height: auto;
-  width: auto;
+  height: 50px;
+  width: 45px;
   z-index: 2;
-  top: 285px;
-  left: 345px;
+  top: 280px;
+  left: 340px;
   position: absolute;
   cursor: pointer;
 }

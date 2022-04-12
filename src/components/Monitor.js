@@ -64,7 +64,7 @@ export const Monitor = () => {
         loginClose={toggleLoginPopup}
         content={
           <div>
-            <h3>{passwordReply}</h3>
+            <h3 className="login-box">{passwordReply}</h3>
             <input
                   className="password"
                   type="password"
@@ -80,7 +80,7 @@ export const Monitor = () => {
         <MonitorPopup
           handleClose={toggleMonitorPopup}
           content={
-            <div>
+            <div className="roses-puzzle">
               <h3>Puzzle</h3>
               <div>
                 Roses are{" "}

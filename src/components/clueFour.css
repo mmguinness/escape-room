@@ -1,9 +1,10 @@
 .clueFour {
   z-index: 2;
-  top: 250px;
-  left: 600px;
+  top: 245px;
+  left: 605px;
   position: absolute;
   height: 70px;
+  width: 50px;
   cursor: pointer;
 }
 
