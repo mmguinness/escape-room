@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MonitorPopup } from "./MonitorPopup";
+import { LoginPopup } from "./LoginPopup";
 import "./monitor.css";
 
 export const Monitor = () => {
@@ -7,9 +8,16 @@ export const Monitor = () => {
   const [inputOne, setInputOne] = useState("");
   const [inputTwo, setInputTwo] = useState("");
   const [answer, setAnswer] = useState("");
+  const [login, setLogin] = useState(false);
+  const [password, setPassword] = useState("");
+  const [passwordReply, setPasswordReply] = useState("Enter Password")
 
   const handleChangeOne = eventOne => {
     setInputOne(eventOne.target.value.toLowerCase());
+  };
+
+  const handlePassword = eventPassword => {
+    setPassword(eventPassword.target.value);
   };
 
   const handleChangeTwo = eventTwo => {
@@ -29,16 +37,45 @@ export const Monitor = () => {
   const toggleMonitorPopup = () => {
     setIsOpen(!isOpen);
   };
+  
+  const toggleLoginPopup = () => {
+    setLogin(!login)
+  }
 
+  const passwordChecker = () => {
+    if (password === "code") {
+      toggleLoginPopup()
+      toggleMonitorPopup()
+    } else {
+       setPasswordReply("Incorrect Password, Try Again")
+    }
+  }
   return (
     <article>
       <img
-        onClick={toggleMonitorPopup}
+        onClick={toggleLoginPopup}
         role="button"
         className="monitor"
         src="monitor.png"
         alt=""
       />
+      {login && (
+        <LoginPopup
+        loginClose={toggleLoginPopup}
+        content={
+          <div>
+            <h3>{passwordReply}</h3>
+            <input
+                  className="password"
+                  type="password"
+                  value={password}
+                  onChange={handlePassword}
+                ></input>
+            <button className="passwordBtn" onClick={passwordChecker}>Enter</button>
+          </div>
+        }/>
+       
+      )}
       {isOpen && (
         <MonitorPopup
           handleClose={toggleMonitorPopup}
