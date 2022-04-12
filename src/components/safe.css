@@ -18,6 +18,7 @@
 
 .safeSubmit {
   position: absolute;
+  top: 110px;
   z-index: 11;
   width: 30px;
   height: 30px;
@@ -25,6 +26,9 @@
 
 .safeReset {
   position: absolute;
+  top: 110px;
+  left: 48px;
+
   z-index: 11;
   width: 30px;
   height: 30px;
@@ -36,7 +40,7 @@
 }
 
 .pinNumber {
-  width: 40px;
+  width: 50px;
 }
 
 .pinResponse {
