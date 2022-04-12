@@ -1,8 +1,7 @@
 import React from "react";
 import Popover from "@mui/material/Popover";
 
-export const ClueTwoPopup = (props) => {
-
+export const ClueTwoPopup = props => {
   return (
     <>
       <Popover
@@ -10,7 +9,7 @@ export const ClueTwoPopup = (props) => {
         onKeyPress={props.toggleClueTwoPopup}
         open={true}
         anchorReference="anchorPosition"
-        anchorPosition={{ top: 500, left: 300 }}
+        anchorPosition={{ top: 170, left: 122 }}
       >
         {props.content}
       </Popover>
