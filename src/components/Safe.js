@@ -38,13 +38,13 @@ export const Safe = () => {
 
   return (
     <section>
-      {openSafe && <img className="openSafe" src="opensafe.jpg" alt="" />}
+      {openSafe && <img className="openSafe" src="Safe_Open.png" alt="" />}
       {closedSafe && (
         <img
           className="safe"
           onClick={toggleSafePopup}
           role="button"
-          src="closedsafe.jpg"
+          src="Safe_Closed.png"
           alt=""
         />
       )}
