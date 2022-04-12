@@ -24,11 +24,7 @@ export const BookPopup = (props) => {
           <br />
           Practice makes
           <strong>{props.blankOne}</strong>
-          <br />
-          <strong>{props.blankOne}</strong> speak louder than words
-          <br />
-          An <strong>{props.blankOne}</strong> a day keeps the doctor away
-          <br />
+          
         </Typography>
       </Popover>
     </>

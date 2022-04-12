@@ -19,7 +19,7 @@ export const ClueOne = (props) => {
 
   const checkInputs = () => {
     if (input === "perfect") {
-      setAnswer("K");
+      setAnswer("C");
       setClueOnePopup(!clueOnePopup);
       setClueOnWall(true);
       props.handleBlankOne();
