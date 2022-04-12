@@ -5,9 +5,6 @@
   position: absolute;
 }
 
-.expired-notice {
-}
-
 .expired-notice > span {
   position: relative;
   top: 34px;
