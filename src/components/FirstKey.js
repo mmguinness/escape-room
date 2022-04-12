@@ -1,5 +1,4 @@
 import { React } from "react";
-import keyImage from "./keyimg.png";
 import "./firstKey.css";
 
 export const FirstKey = props => {
@@ -7,7 +6,7 @@ export const FirstKey = props => {
     <img
       className="firstKey"
       onClick={props.pickUpKey}
-      src={keyImage}
+      src={"gold_keyimg.png"}
       role="button"
       alt=""
     />

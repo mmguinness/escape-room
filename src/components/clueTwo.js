@@ -33,7 +33,7 @@ export const ClueTwo = (props) => {
         onClick={handlePopup}
         role="button"
         className="clueTwo"
-        src="clueTwo.png"
+        src="clue-2.png"
         alt=""
         height="60"
       />

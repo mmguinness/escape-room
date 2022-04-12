@@ -14,7 +14,7 @@ export const Book = (props) => {
         onClick={toggleBookPopup}
         role="button"
         className="book"
-        src="books.png"
+        src="books_transparent_background.png"
         alt=""
       />
       {bookPopup && (

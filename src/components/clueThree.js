@@ -33,7 +33,7 @@ export const ClueThree = (props) => {
         onClick={handlePopup}
         role="button"
         className="clueThree"
-        src="clueThree.png"
+        src="clue-3.png"
         alt=""
       />
       {clueThreePopup && (
