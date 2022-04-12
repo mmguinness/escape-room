@@ -10,7 +10,6 @@ import { ClueTwo } from "./clueTwo";
 import { ClueThree } from "./clueThree";
 import { ClueFour } from "./clueFour";
 import { Book } from "./book";
-import CountdownTimer from "../CountdownTimer";
 
 export const Room = () => {
   const [inventory, setInventory] = useState({
@@ -57,11 +56,6 @@ export const Room = () => {
     setBlankFour("Look ");
   };
 
-  const THIRTY_MINS = 30 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
-
-  const TimeAfterThirtyMinutes = NOW_IN_MS + THIRTY_MINS;
-  console.log("check");
 
   return (
     <article>
@@ -99,7 +93,6 @@ export const Room = () => {
         blankThree={blankThree}
         blankFour={blankFour}
       />
-      <CountdownTimer targetDate={TimeAfterThirtyMinutes} />
     </article>
   );
 };
