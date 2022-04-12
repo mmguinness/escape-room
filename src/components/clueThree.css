@@ -4,6 +4,8 @@
   left: 600px;
   position: absolute;
   height: 50px;
+  cursor: pointer;
+
 }
 
 .word {

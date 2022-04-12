@@ -3,6 +3,8 @@
   top: 175px;
   left: 335px;
   position: absolute;
+  cursor: pointer;
+
 }
 
 .word {
