@@ -19,7 +19,7 @@ export const ClueFour = (props) => {
 
   const checkInputs = () => {
     if (input === "look") {
-      setAnswer("M");
+      setAnswer("D");
       setClueFourPopup(!clueFourPopup);
       setClueOnWall(true);
       props.handleBlankFour();

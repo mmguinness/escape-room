@@ -19,7 +19,7 @@ export const ClueTwo = (props) => {
 
   const checkInputs = () => {
     if (input === "new") {
-      setAnswer("A");
+      setAnswer("O");
       setClueTwoPopup(!clueTwoPopup);
       setClueOnWall(true);
       props.handleBlankTwo();

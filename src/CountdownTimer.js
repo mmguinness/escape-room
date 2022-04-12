@@ -3,12 +3,21 @@ import { useCountdown } from './hooks/useCountdown';
 import DateTimeDisplay from './DateTimeDisplay';
 import "./components/room.css";
 
+
 const ExpiredNotice = () => {
+  
+  function refreshPage() {
+    window.location.reload(false);
+  }
   return (
-    <div className="expired-notice">
-      <span>Time's Up!</span>
-      <p>Try Again?</p>
-    </div>
+    <>
+      <div className="endgame-popup"> </div>    
+
+      <div className="expired-notice">
+        <span>Time's Up!</span>
+        <button className="button button1" onClick={refreshPage}>Try Again?</button>
+      </div>
+    </>
   );
 };
 

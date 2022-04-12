@@ -1,0 +1,32 @@
+.loginpopup-box {
+    position: absolute;
+    left: 600px;
+    bottom: 300px;
+    width: 1500px;
+    height: 100vh;
+    z-index: 11;
+  }
+  
+  .loginbox {
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 4px;
+    left: 40px;
+    bottom: 40px;
+    padding: 20px;
+    overflow: auto;
+    z-index: 11;
+  }
+  
+  .loginbtn-close {
+    cursor: pointer;
+    border: 1px solid #999;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 11;
+  }
