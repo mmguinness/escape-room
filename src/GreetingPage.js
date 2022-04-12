@@ -4,10 +4,6 @@ export const GreetingPage = props => {
   return (
     <div className="greetings">
       <br />
-      <h1 className="welcome" align="center">
-        {" "}
-        Get Me Out Of Here!{" "}
-      </h1>
       <p className="game-explanation">
         You awake in a strange room, with no memory of how or why. Using your
         investigative skills, you must search for clues and solve a series of
