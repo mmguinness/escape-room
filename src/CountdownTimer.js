@@ -3,11 +3,16 @@ import { useCountdown } from './hooks/useCountdown';
 import DateTimeDisplay from './DateTimeDisplay';
 import "./components/room.css";
 
-const ExpiredNotice = () => {
+
+const ExpiredNotice = (props) => {
+  
+  function refreshPage() {
+    window.location.reload(false);
+  }
   return (
     <div className="expired-notice">
       <span>Time's Up!</span>
-      <p>Try Again?</p>
+      <button onClick={refreshPage}>Click to reload!</button>
     </div>
   );
 };

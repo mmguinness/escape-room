@@ -22,7 +22,7 @@
   color: red;
 }
 
-.expired-notice > p {
+.expired-notice > button {
   position: absolute;
   right: 450px;
   top: 70px;
