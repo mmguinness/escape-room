@@ -5,6 +5,13 @@
   position: absolute;
 }
 
+.endgame-popup {
+  position: absolute;
+  z-index: 9;
+  height: 1000px;
+  width: 1000px;
+}
+
 .expired-notice > span {
   position: relative;
   top: 34px;

@@ -58,7 +58,7 @@ export const Room = () => {
     setBlankFour("Look ");
   };
 
-  const THIRTY_MINS = 1 * 2 * 1000;
+  const THIRTY_MINS = 3 * 60 * 1000;
   const NOW_IN_MS = new Date().getTime();
 
   const TimeAfterThirtyMinutes = NOW_IN_MS + THIRTY_MINS;
