@@ -12,7 +12,7 @@ const ExpiredNotice = (props) => {
   return (
     <div className="expired-notice">
       <span>Time's Up!</span>
-      <button onClick={refreshPage}>Click to reload!</button>
+      <button className="button button1" onClick={refreshPage}>Click to reload!</button>
     </div>
   );
 };
