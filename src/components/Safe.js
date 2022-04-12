@@ -63,12 +63,13 @@ export const Safe = () => {
                 ></input>
                 <br />
                 <br />
-                <button className="safeSubmit" onClick={checkInput}>
-                  Submit
-                </button>
-                <button className="safeReset" onClick={resetValue}>
+                <img role="button" className="safeSubmit" src="Submit.jpeg" alt="" onClick={checkInput}/>
+                
+                <br />
+              
+                <img role="button"className="safeReset" src="RedCross.jpeg" alt="" onClick={resetValue}/>
                   X
-                </button>
+                
               </div>
             </article>
           }

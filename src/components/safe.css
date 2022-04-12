@@ -16,6 +16,19 @@
   top: 515px;
 }
 
+.safeSubmit {
+  position: absolute;
+  z-index: 11;
+  width: 30px;
+  height: 30px;
+}
+
+.safeReset {
+  position: absolute;
+  z-index: 11;
+  width: 30px;
+  height: 30px;
+}
 .pinNumber::-webkit-outer-spin-button,
 .pinNumber::-webkit-inner-spin-button {
   -webkit-appearance: none;
