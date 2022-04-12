@@ -5,7 +5,7 @@ import "./safe.css";
 export const Safe = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [inputPin, setInputPin] = useState("");
-  const [answer, setAnswer] = useState("Enter your pin");
+  const [answer, setAnswer] = useState("Enter pin:");
   const [openSafe, setOpenSafe] = useState(false);
   const [closedSafe, setClosedSafe] = useState(true);
 
@@ -19,7 +19,7 @@ export const Safe = () => {
 
   const checkInput = () => {
     if (inputPin === "1234") {
-      setAnswer("Correct Pin");
+      setAnswer("Correct Pin!");
       setTimeout(closePopup, 1000);
       setOpenSafe(true);
       setClosedSafe(false);

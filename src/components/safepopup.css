@@ -1,16 +1,16 @@
 .safepopup-box {
   position: absolute;
-  left: 600px;
-  bottom: 300px;
+  left: 285px;
+  bottom: -10px;
   width: 1500px;
-  height: 100vh;
+  height: 1000px;
   z-index: 10;
 }
 
 .safebox {
   position: absolute;
-  width: 330px;
-  height: 250px;
+  width: 190px;
+  height: 160px;
   background-color: white;
   border: 1px solid #999;
   border-radius: 4px;
