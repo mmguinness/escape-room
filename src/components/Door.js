@@ -2,15 +2,20 @@ import React, { useState } from "react";
 import DoorPopup from "./DoorPopup";
 import "./door.css";
 
-export const Door = (props) => {
+export const Door = props => {
   const [doorPopup, setDoorPopup] = useState(false);
- 
-  
+  const [escape, setEscape] = useState(false);
+
   const toggleDoorPopup = () => {
-    setDoorPopup(!doorPopup);
+    if (props.inventory.key === true) {
+      setEscape(!escape);
+      setDoorPopup(!doorPopup);
+    } else {
+      setDoorPopup(!doorPopup);
+    }
   };
 
- 
+  //  behind-door-image.png
   return (
     <article>
       <img
@@ -20,6 +25,9 @@ export const Door = (props) => {
         src="door.png"
         alt=""
       />
+      {escape && (
+        <img className="openDoor" src="behind-door-image.png" alt="" />
+      )}
       {doorPopup && (
         <DoorPopup
           handleClose={toggleDoorPopup}
