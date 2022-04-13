@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import "./doorpopup.css";
 
 const DoorPopup = props => {
-  const locked = "Door is locked"
+  const locked = "Door is locked, explore the room!"
   const unlocked = "Congratulations, you win!"
 
   return (
