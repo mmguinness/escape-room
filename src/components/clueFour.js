@@ -23,6 +23,8 @@ export const ClueFour = (props) => {
       setClueFourPopup(!clueFourPopup);
       setClueOnWall(true);
       props.handleBlankFour();
+    } else {
+      setClueFourPopup(!clueFourPopup);
     }
   };
 
@@ -40,6 +42,7 @@ export const ClueFour = (props) => {
         <ClueFourPopup
           toggleClueFourPopup={checkInputs}
           inventory={props.inventory}
+          input={input}
           content={
             <div>
               <Typography sx={{ p: 2 }}> 

@@ -23,6 +23,8 @@ export const ClueThree = (props) => {
       setClueThreePopup(!clueThreePopup);
       setClueOnWall(true);
       props.handleBlankThree();
+    } else {
+      setClueThreePopup(!clueThreePopup);
     }
   };
 
@@ -40,6 +42,7 @@ export const ClueThree = (props) => {
         <ClueThreePopup
           toggleClueThreePopup={checkInputs}
           inventory={props.inventory}
+          input={input}
           content={
             <div>
               <Typography sx={{ p: 2 }}>

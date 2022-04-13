@@ -6,7 +6,7 @@ export const ClueOnePopup = props => {
     <>
       <Popover
         onClose={props.toggleClueOnePopup}
-        onKeyPress={props.toggleClueOnePopup}
+        onKeyPress={(props.input === "perfect") && props.toggleClueOnePopup}
         open={true}
         anchorReference="anchorPosition"
         anchorPosition={{ top: 280, left: 122 }}
