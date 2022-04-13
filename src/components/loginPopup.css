@@ -1,50 +1,48 @@
 .loginpopup-box {
-    position: absolute;
-    left: 200px;
-    bottom: 200px;
-    width: 1500px;
-    height: 100vh;
-    z-index: 11;
-  }
-  
-  .loginbox {
-    position: absolute;
-    width: 460px;
-    height: 250px;
-    background-color: white;
-    border: 1px solid #999;
-    border-radius: 4px;
-    left: 40px;
-    bottom: 40px;
-    padding: 20px;
-    overflow: auto;
-    z-index: 11;
-  }
-  
-  .loginbtn-close {
-    cursor: pointer;
-    border: 1px solid #999;
-    border-radius: 50%;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: 11;
-  }
+  position: absolute;
+  width: 1000px;
+  height: 696px;
+  z-index: 11;
+}
 
-  .login-box {
-    position: absolute;
-    top: 10px;
-    left: 180px;
-  }
+.loginbox {
+  position: absolute;
+  width: 460px;
+  height: 250px;
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 4px;
+  left: 330px;
+  bottom: 200px;
+  padding: 20px;
+  overflow: auto;
+  z-index: 11;
+}
 
-  .password {
-    position: absolute;
-    top: 70px;
-    left: 175px;
-  }
+.loginbtn-close {
+  cursor: pointer;
+  border: 1px solid #999;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 11;
+}
 
-  .passwordBtn {
-    position: absolute;
-    top: 70px;
-    left: 280px;
-  }
+.login-box {
+  position: absolute;
+  top: 10px;
+  left: 180px;
+}
+
+.password {
+  position: absolute;
+  top: 70px;
+  left: 175px;
+}
+
+.passwordBtn {
+  position: relative;
+  top: 50px;
+  left: 300px;
+}

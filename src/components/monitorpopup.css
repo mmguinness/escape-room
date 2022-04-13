@@ -1,9 +1,7 @@
 .monitorpopup-box {
   position: absolute;
-    left: 200px;
-    bottom: 200px;
-    width: 1500px;
-    height: 100vh;
+  width: 1000px;
+  height: 696px;
   z-index: 10;
 }
 
@@ -14,8 +12,8 @@
   background-color: white;
   border: 1px solid #999;
   border-radius: 4px;
-  left: 40px;
-  bottom: 40px;
+  left: 350px;
+  bottom: 200px;
   padding: 20px;
   overflow: auto;
   z-index: 10;
