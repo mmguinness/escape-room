@@ -1,7 +1,7 @@
 .safepopup-box {
   position: absolute;
   left: 285px;
-  bottom: -10px;
+  bottom: 50px;
   width: 1500px;
   height: 1000px;
   z-index: 10;
