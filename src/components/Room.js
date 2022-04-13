@@ -56,7 +56,6 @@ export const Room = () => {
     setBlankFour("Look ");
   };
 
-
   return (
     <article>
       <Door inventory={inventory}></Door>
