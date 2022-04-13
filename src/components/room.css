@@ -63,7 +63,7 @@
 .show-counter {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   font-weight: 700;
   font-size: 1.25rem;

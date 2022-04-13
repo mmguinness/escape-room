@@ -5,7 +5,7 @@ import "./doorpopup.css";
 
 const DoorPopup = props => {
   const locked = "Door is locked"
-  const unlocked = "Door is now open, RUN!"
+  const unlocked = "Congratulations, you win!"
 
   return (
     <>
@@ -13,9 +13,9 @@ const DoorPopup = props => {
         onClose={props.handleClose}
         open={true}
         anchorReference="anchorPosition"
-        anchorPosition={{ top: 500, left: 0 }}
+        anchorPosition={{ top: 27, left: 347 }}
       >
-        <Typography sx={{ p: 2 }}>
+        <Typography variant="h5" sx={{ p: 4 }}>
           <div>{props.inventory.key === true && unlocked}</div>
           <div>{props.inventory.key === false && locked}</div>
         </Typography>
