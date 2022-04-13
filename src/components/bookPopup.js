@@ -11,10 +11,13 @@ export const BookPopup = (props) => {
         onKeyPress={props.toggleBookPopup}
         open={true}
         anchorReference="anchorPosition"
-        anchorPosition={{ top: 500, left: 300 }}
+        anchorPosition={{ top: 370, left: 720 }}
       >
         <Typography sx={{ p: 2 }}>
-          A stack of books about common sayings and proverbs.
+          A stack of books about common
+          <br />
+          sayings and proverbs.
+          <br />
           <br />
           Clues:
           <br />
@@ -25,7 +28,6 @@ export const BookPopup = (props) => {
           <br />
           Practice makes
           <strong>{props.blankOne}</strong>
-          
         </Typography>
       </Popover>
     </>

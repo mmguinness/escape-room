@@ -24,7 +24,7 @@ export const ClueOne = (props) => {
       setClueOnWall(true);
       props.handleBlankOne();
     } else {
-      setAnswer("Try again");
+      setClueOnePopup(!clueOnePopup);
     }
   };
 
@@ -44,6 +44,7 @@ export const ClueOne = (props) => {
         <ClueOnePopup
           toggleClueOnePopup={checkInputs}
           inventory={props.inventory}
+          input={input}
           content={
             <div>
               <Typography sx={{ p: 2 }}>
