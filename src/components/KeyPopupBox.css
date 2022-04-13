@@ -1,0 +1,8 @@
+.keypopup-box {
+  position: relative;
+  left: 200px;
+  bottom: 200px;
+  width: 1500px;
+  height: 100vh;
+  z-index: 11;
+}
