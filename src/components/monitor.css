@@ -29,8 +29,8 @@
 
 .pin {
   position: absolute;
-  left: 250px;
-  bottom: 100px;
+  left: 190px;
+  top: 30px;
   color: blueviolet;
   font-size: 30px;
 }
