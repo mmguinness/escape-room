@@ -19,9 +19,11 @@ export const BookPopup = (props) => {
           sayings and proverbs.
           <br />
           <br />
-          Clues:
+          Example:
           <br />
-          It's not hard it's <strong>{props.blankTwo}</strong>
+          It's not hard it's <strong>new</strong>
+          <br />
+          Find and complete these sayings:
           <br />A stitch in <strong>{props.blankThree}</strong>saves nine
           <br />
           <strong>{props.blankFour}</strong> before you leap
