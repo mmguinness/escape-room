@@ -15,7 +15,7 @@ Link to game: https://get-me-out-of-here-game.herokuapp.com/
 - Find the key to be able to escape the room
 - You have three minutes to escape or the game ends
 
-![Image of game](game_screenshots/Game_play_03.png)
+![Image of game](./public/game_screenshots/Game_play_03.png)
 
 # Tech
 
@@ -30,8 +30,12 @@ This is a front-end only game. We wanted to push ourselves to learn a new techno
 
 # MVP
 
-![Key_Diagram](https://github.com/mmguinness/escape-room/public/click_key.png)
+![Door_Diagram](./public/click_door.png)
 
-![Door_Diagram](click_door.png)
+# Screenshots of gameplay
 
-- Click on clue and acquire key to escape room.
+![](./public/Enter_game.png)
+![](./public/Game_play_01.png)
+![](./public/Game_play_05.png)
+
+
