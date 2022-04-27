@@ -29,9 +29,23 @@ This is a front-end only game. We wanted to push ourselves to learn a new techno
 - HTML / CSS: For visual styling
 
 # MVP
+<details><summary>Show process</summary>
 
+User Stories
+  ```
+  As a user, So I know what type of game I'm playing I want to see an description page with a start button.
+  
+  As a player, So I can not escape without the key the door gives me a prompt that it is locked.
+  
+  As a player So I can play the game, I want to be able to click on the key.
+  
+  As a player, So I can escape the room, I want to be able to use the key and open the door.
+  ```
+  
 ![Door_Diagram](./public/click_door.png)
-
+  
+</details>
+  
 # Screenshots of gameplay
 
 ![Image_01](./public/game_screenshots/Enter_game.png)
