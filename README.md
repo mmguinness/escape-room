@@ -34,8 +34,7 @@ This is a front-end only game. We wanted to push ourselves to learn a new techno
 
 # Screenshots of gameplay
 
-![](./public/Enter_game.png)
-![](./public/Game_play_01.png)
-![](./public/Game_play_05.png)
-
+![Image_01](./public/game_screenshots/Enter_game.png)
+![Image_02](./public/game_screenshots/Game_play_01.png)
+![Image_03](./public/game_screenshots/Game_play_05.png)
 
