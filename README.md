@@ -24,9 +24,10 @@ This is a front-end only game. We wanted to push ourselves to learn a new techno
 - JavaScript
 - NodeJS 
 - ReactJS
-- MaterialUI: react component library
-- React Testing Library: Integration testing
-- HTML / CSS: For visual styling
+- MaterialUI: react component library.
+- React Testing Library: Integration testing.
+- HTML / CSS: For visual styling.
+- Heroku: Deployment to web.
 
 # MVP
 <details><summary>Show process</summary>
