@@ -1,10 +1,10 @@
 ### Escape-room
 
-# Project Description
+# Get me out of here!
 
 **An escape room game where you collect clues and solve puzzles to complete the mystery, within a limited timeframe, all from your browser.**
 
-This is a Makers Academy final project created in two weeks by the following: [Ali](https://github.com/AliCo-Hash), [Ben](https://github.com/benpartington), [Charlotte](https://github.com/CBuchan5), [Marie](https://github.com/mmguinness), [Rakshak](https://github.com/Rakshak81).
+This is a Makers Academy final project created in two weeks by: [Ali](https://github.com/AliCo-Hash), [Ben](https://github.com/benpartington), [Charlotte](https://github.com/CBuchan5), [Marie](https://github.com/mmguinness), [Rakshak](https://github.com/Rakshak81).
 
 # How to play
 
@@ -24,7 +24,7 @@ This is a front-end only game. We wanted to push ourselves to learn a new techno
 - JavaScript
 - NodeJS 
 - ReactJS
-- MaterialUI: react component library.
+- Material-UI: React component library.
 - React Testing Library: Integration testing.
 - HTML / CSS: For visual styling.
 - Heroku: Deployment to web.
