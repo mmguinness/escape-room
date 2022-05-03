@@ -53,6 +53,7 @@ User Stories
   
 ![Door_Diagram](./public/click_door.png)
 
+
 ![MVP](./public/MVP.png)
 
 </details>
@@ -62,4 +63,3 @@ User Stories
 ![Image_01](./public/game_screenshots/Enter_game.png)
 ![Image_02](./public/game_screenshots/Game_play_01.png)
 ![Image_03](./public/game_screenshots/Game_play_05.png)
-
